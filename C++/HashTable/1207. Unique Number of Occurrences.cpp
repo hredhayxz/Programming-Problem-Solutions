@@ -15,8 +15,10 @@ public:
         {
             st.insert(it.second);
         }
-        return st.size() == mp.size();
-
+        if(st.size() == mp.size())
+        {
+            return true;
+        }
+        return false;
     }
 };
-
