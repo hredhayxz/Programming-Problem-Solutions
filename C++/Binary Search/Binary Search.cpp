@@ -11,13 +11,16 @@ int binarySearch(int arr[], int n, int key)
         {
             return mid;
         }
-        if (arr[mid] < key)
-        {
-            left = mid + 1;
-        }
         else
         {
-            right = mid - 1;
+            if (arr[mid] < key)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
         }
     }
     return -1;
