@@ -1,4 +1,4 @@
-/// Ques link: https://leetcode.com/problems/find-all-duplicates-in-an-array/
+/// Question link: https://leetcode.com/problems/find-all-duplicates-in-an-array/
 
 class Solution
 {
