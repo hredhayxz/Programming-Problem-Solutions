@@ -1,7 +1,8 @@
-///Ques link: https://leetcode.com/problems/two-sum/
+/// Ques link: https://leetcode.com/problems/two-sum/
 
 
-///two-pointer approach
+
+/// two-pointer approach
 
 
 class Solution
