@@ -1,6 +1,7 @@
 /// Ques link: https://leetcode.com/problems/maximum-subarray/
 
 
+///Kadane’s Algorithm
 class Solution
 {
 public:
