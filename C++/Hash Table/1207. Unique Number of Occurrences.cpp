@@ -1,4 +1,4 @@
-/// Ques link: https://leetcode.com/problems/unique-number-of-occurrences/
+/// Question link: https://leetcode.com/problems/unique-number-of-occurrences/
 
 class Solution
 {
