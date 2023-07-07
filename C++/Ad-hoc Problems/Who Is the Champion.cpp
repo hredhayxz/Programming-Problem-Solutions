@@ -1,3 +1,6 @@
+/// Ques link: https://toph.co/p/who-is-the-champion
+
+
 #include <iostream>
 using namespace std;
 
@@ -17,3 +20,4 @@ int main()
 
     return 0;
 }
+
