@@ -1,39 +1,34 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <unordered_set>
+
 using namespace std;
-vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
-{
-    vector<int> intersectionItems;
-    int i=0,j=0;
-    while(i<n&&j<m)
-    {
-        if(arr1[i]==arr2[j])
-        {
-            intersectionItems.push_back(arr1[i]);
-            i++;
-            j++;
-        }
-        else
-        {
-            if(arr1[i]>arr2[j])
-            {
-                j++;
-            }
-            else
-            {
-                i++;
-            }
-        }
+
+int max_cards(int n, vector<string> pairs) {
+  unordered_set<char> pairs_set;
+  for (string pair : pairs) {
+    pairs_set.insert(pair[0]);
+    pairs_set.insert(pair[1]);
+  }
+
+  int max_cards = 0;
+  for (char c = 'A'; c <= 'Z'; c++) {
+    if (pairs_set.find(c) == pairs_set.end()) {
+      max_cards++;
     }
-    return intersectionItems;
+  }
+
+  return max_cards;
 }
 
-int main()
-{
-    vector<int> numRay = { 0, 1,2,  2,3, 4,7, 8 };
-    vector<int> numRay2 = {  2,  2, 3,3, 8,};
+int main() {
+  int n, m;
+  cin >> n >> m;
+  vector<string> pairs(m);
+  for (int i = 0; i < m; i++) {
+    cin >> pairs[i];
+  }
 
-    vector<int> ans = findArrayIntersection(numRay,8,numRay2,5);
-    for (int i : ans)
-        cout << i << ' ' << endl;
-    return 0;
+  cout << max_cards(n, pairs) << endl;
+  return 0;
 }
