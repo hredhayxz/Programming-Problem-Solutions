@@ -1,3 +1,6 @@
+/// Ques link: https://codeforces.com/problemset/problem/405/A
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define pb push_back
@@ -13,12 +16,23 @@ int cs=1;
 void solve(){
     //string str;
     //cin>>str;
-    //int N;
-    //cin>>N;
+    int N,a;
+    cin>>N;
+    vector<int> v;
+    for(int i=0;i<N;i++)
+    {
+        cin>>a;
+        v.pb(a);
+    }
+    sort(v.begin(),v.end());
+    for(auto it:v)
+    {
+        cout<<it<<" ";
+    }
 
     //cout<<"Case #"<<cs++<<": ";
     //cout<<"Case "<<cs++<<": ";
-    //cout<< <<endl;
+    cout <<endl;
 }
 int main(){
     int T=1;
@@ -26,3 +40,4 @@ int main(){
     while(T--) solve();
     Ta_Ta;
 }
+
