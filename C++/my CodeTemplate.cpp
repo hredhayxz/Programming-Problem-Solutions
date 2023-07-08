@@ -18,7 +18,7 @@ void solve(){
 
     //cout<<"Case #"<<cs++<<": ";
     //cout<<"Case "<<cs++<<": ";
-    //cout<<<<endl;
+    //cout<< <<endl;
 }
 int main(){
     int T=1;
